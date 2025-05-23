@@ -18,51 +18,44 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="left">
-          <h2>Explore</h2>
-          <input type="text" placeholder="Search" />
-        </div>
-        <div class="middle"><img src="image.png" alt="" /></div>
-        <div class="right">
-          <li>News & Events></li>
-          <li>Multimedia></li>
-          <li>NASA+LIVE</li>
-        </div>
+    <div class="header-container">
+      <div class="left">
+        <h2>Explore</h2>
+        <input type="text" placeholder="Search" />
       </div>
-    </header>
+      <div class="middle"><img src="image.png" alt="" /></div>
+      <div class="right">
+        <li>News & Events></li>
+        <li>Multimedia></li>
+        <li>NASA+LIVE</li>
+      </div>
+    </div>
+
     <section id="main">
       <div class="main-container">
-        <div class="marsrocks">
-          <h2>Ranking Mars Rocks</h2>
-          <p>
+        <div class="main-text">
+          <h2 id="title">Ranking Mars Rocks</h2>
+          <p id="text">
             NASA's Perseverance Mars rover is exploring a new region of
             interest— the “Krokodillen”—that may contain some of the oldest
             rocks on the Red Planet.
           </p>
-          <button id="redbut">Exploring Jezero Crater</button>
+          <button id="red-button">Exploring Jezero Crater</button>
         </div>
-        <div class="bottom">
-          <div class="bottom-1 bb">
-            <div class="bor">
-              <p class="rover">PERSEVERANCE ROVER</p>
-              <h3 class="auroras">Auroras at Mars</h3>
-            </div>
+        <div class="bottom-container">
+          <div class="bottom">
+            <p class="bottom-text">PERSEVERANCE ROVER</p>
+            <h3 class="bottom-text-bold">Auroras at Mars</h3>
           </div>
-          <div class="bottom-2 bb">
-            <div class="bor">
-              <p class="magellan">MAGELLAN MISSION</p>
-              <h3 class="venus">Deciphering Venus</h3>
-            </div>
+          <div class="bottom">
+            <p class="bottom-text">MAGELLAN MISSION</p>
+            <h3 class="bottom-text-bold">Deciphering Venus</h3>
           </div>
-          <div class="bottom-3 bb">
-            <div class="bor">
-              <p class="live">STIMULATED LIVE VIEW</p>
-              <h3 class="solar">Eyes on the Solar System</h3>
-            </div>
+          <div class="bottom">
+            <p class="bottom-text">STIMULATED LIVE VIEW</p>
+            <h3 class="bottom-text-bold">Eyes on the Solar System</h3>
           </div>
-          <div class="bb" id="nobor"></div>
+          <div class="bottom" id="no-border"></div>
         </div>
       </div>
       <div class="overlay"></div>

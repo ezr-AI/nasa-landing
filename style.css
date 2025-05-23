@@ -3,27 +3,25 @@
   margin: 0;
   padding: 0;
   font-family: "Inter";
+  color: white;
 }
 
-.container,
+.header-container,
 .left,
 .right {
   display: flex;
 }
 
-header {
+/* HEADER */
+
+.header-container {
   position: relative;
   z-index: 2;
-}
-
-.container {
   height: 86px;
   align-items: center;
   justify-content: space-between;
   background-color: #000000;
-  color: white;
   padding: 16px;
-  font-family: "Inter";
 }
 
 /* Left yeah */
@@ -46,9 +44,7 @@ header {
   background-color: black;
   outline: none;
   border: 2px solid #25282c;
-  color: white;
   font-size: 15px;
-  font-family: "Inter";
 }
 
 /* middle woooho */
@@ -74,10 +70,14 @@ header {
   font-weight: 600;
 }
 
-/* main section baby */
-#main {
-  color: white;
+/* MAIN SECTION */
+.main-container {
+  display: flex;
   height: calc(100vh - 86px);
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .background {
@@ -104,28 +104,8 @@ header {
   z-index: 1;
 }
 
-#redbut {
-  font-weight: bold;
-  font-size: 22px;
-  color: white;
-  background-color: #d83933;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  line-height: 1;
-  text-align: center;
-}
-
-.main-container {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  z-index: 2;
-}
-
-.marsrocks {
+/* Main text */
+.main-text {
   display: flex;
   height: 100%;
   width: 50%;
@@ -136,19 +116,32 @@ header {
   padding: 48px 24px 24px;
 }
 
-.marsrocks h2 {
+#red-button {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #d83933;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+}
+
+#title {
   margin: 60px 0 8px;
   font-size: 62px;
 }
 
-.marsrocks p {
+#text {
   max-width: 640px;
   font-size: 16px;
   line-height: 26.5px;
   margin: 16px 0;
 }
 
-.bottom {
+/* Bottom text */
+
+.bottom-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -157,16 +150,18 @@ header {
   height: 122px;
 }
 
-.bb {
+.bottom {
   flex: 1;
   height: 82px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-right: 16px;
+  margin-right: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 16px;
 }
 
-.bb p {
+.bottom-text {
   font-family: "DM Mono";
   font-size: 11.2px;
   letter-spacing: 3.5px;
@@ -175,17 +170,12 @@ header {
   margin: 11.2px 0;
 }
 
-.bb h3 {
+.bottom-text-bold {
   padding-top: 12px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.bor {
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-#nobor {
+#no-border {
   border: none;
 }
